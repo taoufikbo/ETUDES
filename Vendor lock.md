@@ -8,36 +8,61 @@ Par ailleurs, l’adoption croissante de **plateformes de type PaaS (Platform as
 
 Dans cette étude, nous analyserons les **formes de vendor lock-in**, leurs **causes techniques et économiques**, ainsi que les **leviers permettant de limiter cette dépendance** pour garder le contrôle sur ses choix technologiques, que ce soit dans un environnement **cloud public**, **privé** ou **hybride**.
 
-## Définition du Vendor Lock-in
+## Définition et typologie du Vendor Lock-in
 
-Le **vendor lock-in**, ou enfermement propriétaire, désigne une situation dans laquelle une entreprise devient fortement dépendante d’un fournisseur particulier pour un produit ou un service, au point qu’elle ne peut pas en changer sans subir des coûts significatifs, des pertes de données, ou des interruptions de service.
+Le vendor lock-in désigne la situation où une entreprise devient dépendante d’un fournisseur technologique, rendant difficile, coûteux ou risqué le changement de prestataire ou de solution.
 
-Selon le **NIST (National Institute of Standards and Technology)**, le vendor lock-in est un risque inhérent à l’utilisation des services cloud, notamment lorsque les solutions utilisées ne respectent pas des standards ouverts ou ne permettent pas l’interopérabilité avec d’autres systèmes. Ce phénomène complique la migration vers d'autres prestataires ou le rapatriement des charges de travail en interne.
+### Typologie du Vendor Lock-in selon l’article IEEE (2015)
 
-> *Source : NIST Special Publication 800-146 – Cloud Computing Synopsis and Recommendations*
+L’article *Vendor Lock-In in Cloud Computing: A Survey* (2015) identifie quatre principaux types de verrouillage dans le contexte du cloud computing :
 
-De manière complémentaire, **Jean-Christophe Viseur** (2014) étend la notion de verrouillage en insistant sur ses **dimensions multiples**, qui vont au-delà des simples considérations techniques. Il identifie ainsi **plusieurs niveaux de lock-in**, chacun pouvant être un frein à la réversibilité des systèmes d'information.
+1. **Lock-in des données**  
+   Ce verrouillage se manifeste par la difficulté de migrer ou d’exporter des données stockées dans des formats propriétaires ou verrouillés par le fournisseur, souvent aggravé par des coûts élevés liés à l’extraction (frais de sortie).
 
-### Les niveaux de Vendor Lock-in selon J.-C. Viseur
+2. **Lock-in des applications**  
+   Il s’agit de la dépendance aux APIs, aux langages de programmation et aux outils spécifiques d’un fournisseur, qui compliquent la portabilité et la migration des applications vers une autre plateforme.
 
-1. **Verrouillage technologique** :  
-   Résulte de l’utilisation de technologies propriétaires ou non standardisées, rendant difficile l’interopérabilité ou la migration.
+3. **Lock-in des infrastructures**  
+   Ce type concerne l’usage de configurations matérielles, de technologies de virtualisation ou de services d’infrastructure propres à un fournisseur, rendant la migration vers une infrastructure alternative complexe.
 
-2. **Verrouillage juridique** :  
-   Découle de clauses contractuelles restrictives, d’accords de licences, ou d'engagements de durée qui limitent la liberté de changement de fournisseur.
+4. **Lock-in des services**  
+   L’intégration profonde de services managés (bases de données, messagerie, monitoring, sécurité) spécifiques à un fournisseur cloud crée une forte dépendance, difficile à dissocier lors d’un changement de fournisseur.
 
-3. **Verrouillage organisationnel** :  
-   Apparaît lorsque les processus internes de l’entreprise sont profondément intégrés à une solution spécifique, rendant complexe le changement sans transformation structurelle.
+---
 
-4. **Verrouillage cognitif** :  
-   Reflète la dépendance aux compétences internes ou à la culture d’un écosystème technologique donné, rendant psychologiquement ou culturellement difficile toute remise en question.
+Ces différentes formes de lock-in sont souvent combinées, rendant la sortie d’un fournisseur à la fois coûteuse et complexe. L’article recommande d’adopter des architectures ouvertes et basées sur des standards pour limiter ces dépendances.
 
-5. **Verrouillage économique** :  
-   Lié aux investissements financiers déjà réalisés (capex, formation, intégration), qui rendent toute migration économiquement non rentable à court terme.
+> *Source : IEEE Xplore, Vendor Lock-In in Cloud Computing: A Survey (2015)*  
+> [https://ieeexplore.ieee.org/document/7009018](https://ieeexplore.ieee.org/document/7009018)
 
-> *Source : Viseur, J.-C. (2014). « Les enjeux du verrouillage technologique dans le cloud computing », CREIS-Terminal, n°115-116.*  
-> [https://www.lecreis.org/creis/wp-content/uploads/Viseur-CREIS-TERMINAL_2014.pdf](https://www.lecreis.org/creis/wp-content/uploads/Viseur-CREIS-TERMINAL_2014.pdf)
+## Comprendre les modèles de licence avant d'aller plus loin
 
-Ces différentes formes de verrouillage peuvent se cumuler et former un **système de dépendance complexe**, qu’il est nécessaire d’analyser en profondeur pour anticiper les risques et prendre des décisions éclairées.
+Avant d’aller plus loin dans l’étude du vendor lock-in, il est important de comprendre les différents **modèles de licence** utilisés par les acteurs IT, qu’ils soient propriétaires, open source ou hybrides. Ces modèles influencent fortement la flexibilité, la pérennité et les risques de dépendance aux fournisseurs.
 
+| Modèle de licence       | Description                                                                                       | Exemple d’utilisation                         | Impact potentiel sur le vendor lock-in           |
+|-------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------|--------------------------------------------------|
+| **Propriétaire**        | Licence fermée, code source non accessible, usage soumis à un contrat strict et souvent coûteux. | Microsoft Windows, VMware vSphere              | Fort, verrouillage élevé à cause des coûts et restrictions |
+| **Open Source**         | Code source accessible librement, souvent sous licences permissives (MIT, Apache) ou copyleft (GPL). | Linux, Kubernetes, OpenShift                   | Faible à modéré, possibilité de fork et migration, mais dépend de la communauté et du support |
+| **OpenCore**            | Modèle hybride où une partie du code est open source et des fonctionnalités clés restent propriétaires. | ElasticSearch, GitLab                          | Modéré à fort, car les fonctions critiques restent verrouillées |
+| **Freemium**            | Offre gratuite limitée avec options payantes pour fonctionnalités avancées ou support.            | MongoDB, Redis Enterprise                      | Variable, peut générer dépendance à la version payante |
+| **SaaS (Software as a Service)** | Logiciel accessible via cloud, abonnement avec contrat, souvent sans accès au code source.               | Salesforce, Google Workspace                   | Très fort, dépendance complète au fournisseur et ses conditions |
+| **Commercial Open Source** | Produit open source avec support commercial, maintenance, et extensions payantes.                   | Red Hat Enterprise Linux, Cloudera             | Modéré, possibilité de choisir support ou auto-gestion |
+| **Licence duale**       | Logiciel disponible sous deux licences distinctes, généralement open source et commerciale.       | MySQL, Qt                                      | Variable, selon le choix de licence et usage     |
+
+---
+
+
+Selon l’étude de German et Hassan (2009) publiée dans *IEEE Software*, les modèles de licence influencent non seulement la manière dont les logiciels sont utilisés et distribués, mais aussi les dynamiques de contribution communautaire et la pérennité des projets. 
+
+- Les licences **propriétaires** restreignent fortement la modification et la redistribution, ce qui augmente le risque de vendor lock-in du fait de coûts élevés et de limitations contractuelles.  
+- Les licences **open source** favorisent la transparence et la possibilité d’adaptation, réduisant le verrouillage, mais leur efficacité dépend de la vitalité de la communauté et de la qualité du support disponible.  
+- Les modèles hybrides, comme **OpenCore** ou **licences duales**, introduisent un équilibre entre ouverture et contrôle propriétaire, créant souvent des situations de dépendance partielle où certaines fonctionnalités restent bloquées.  
+- Le modèle **SaaS**, très répandu dans le cloud, présente un risque élevé de lock-in lié à l’absence d’accès au code source et à la dépendance aux services hébergés.
+
+Cette analyse souligne l’importance de bien choisir le modèle de licence en fonction des besoins de contrôle, de flexibilité, et de souveraineté informatique.
+
+> *Source :* German, D. M., & Hassan, A. E. (2009). *A Survey on Open Source Licensing Models and Their Implications*. IEEE Software, 26(1), 22-29.  
+> [https://ieeexplore.ieee.org/document/4803679](https://ieeexplore.ieee.org/document/4803679)
+
+---
 
