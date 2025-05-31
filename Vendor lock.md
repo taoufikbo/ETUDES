@@ -66,3 +66,40 @@ Cette analyse souligne l’importance de bien choisir le modèle de licence en f
 
 ---
 
+## Viabilité économique des différents modèles de licence
+
+La viabilité économique des modèles de licence est un facteur clé pour comprendre les dynamiques du marché IT et les risques liés au vendor lock-in. Chaque modèle présente des avantages et des contraintes spécifiques, qui influencent la rentabilité des fournisseurs ainsi que la flexibilité des utilisateurs.
+
+### Importance pour les grands groupes
+
+Pour un grand groupe, il est essentiel **avant de s’engager dans une solution** technologique, de s’assurer de la viabilité du business model du fournisseur selon le modèle de licence proposé. En effet, la pérennité financière du fournisseur impacte directement la continuité des services, la maintenance, la mise à jour des logiciels, et la disponibilité du support. 
+
+Un fournisseur dont le modèle économique est fragile ou non durable peut entraîner des risques importants : interruption de service, augmentation soudaine des coûts, changement unilatéral des conditions contractuelles, voire abandon du produit. Ainsi, comprendre la robustesse économique derrière le modèle de licence permet de mieux anticiper ces risques et de sécuriser les investissements sur le long terme.
+
+### Analyse des modèles
+
+- **Propriétaire** :  
+  Ce modèle repose sur la vente de licences et souvent sur des contrats de support à coûts élevés. Il garantit des revenus récurrents importants aux fournisseurs, mais impose un fort verrouillage aux clients, limitant leur capacité à changer de fournisseur ou à adapter la solution.  
+
+- **Open Source** :  
+  Basé sur la collaboration communautaire et la diffusion libre du code, ce modèle repose souvent sur des services annexes (support, formation, personnalisation) pour assurer la rentabilité. La viabilité économique dépend largement de la taille et de l’engagement de la communauté ainsi que de la capacité à monétiser les services.  
+
+- **OpenCore et licences duales** :  
+  Ces modèles combinent ouverture et offres commerciales, permettant aux fournisseurs de générer des revenus grâce à des fonctionnalités avancées ou du support premium, tout en attirant une large base d’utilisateurs avec la version open source. Ce modèle équilibre accessibilité et rentabilité.  
+
+- **Freemium et SaaS** :  
+  Le modèle freemium attire un grand nombre d’utilisateurs grâce à une offre gratuite limitée, puis convertit une partie en clients payants. Le SaaS, quant à lui, fonctionne sur des abonnements récurrents, ce qui assure un flux de revenus stable et prévisible. Cependant, ils génèrent une dépendance forte à la plateforme et aux conditions tarifaires du fournisseur.  
+
+---
+
+### Source scientifique
+
+Selon l’étude de Fitzgerald et al. (2014) publiée dans *Research Policy*, les modèles économiques des logiciels open source et hybrides influencent directement la pérennité des projets et la structure du marché IT. L’étude met en lumière que :
+
+- Les fournisseurs open source réussissent en combinant modèles communautaires et offres commerciales ciblées.  
+- Les modèles SaaS favorisent la croissance rapide, mais augmentent le verrouillage économique des clients.  
+- Le modèle propriétaire, bien que traditionnellement rentable, fait face à des défis liés à la pression croissante pour plus d’ouverture et de flexibilité.
+
+> *Source :* Fitzgerald, B., Krishnamurthy, S., & Scarbrough, H. (2014). *Open Source Software and Economic Sustainability: An Empirical Analysis*. Research Policy, 43(4), 605-616.  
+> [https://doi.org/10.1016/j.respol.2013.10.013](https://doi.org/10.1016/j.respol.2013.10.013)
+---
