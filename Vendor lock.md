@@ -103,3 +103,35 @@ Selon l’étude de Fitzgerald et al. (2014) publiée dans *Research Policy*, le
 > *Source :* Fitzgerald, B., Krishnamurthy, S., & Scarbrough, H. (2014). *Open Source Software and Economic Sustainability: An Empirical Analysis*. Research Policy, 43(4), 605-616.  
 > [https://doi.org/10.1016/j.respol.2013.10.013](https://doi.org/10.1016/j.respol.2013.10.013)
 ---
+
+## Focus : Open Source vs OpenCore et licences duales
+
+### Introduction
+
+L’émergence du logiciel **Open Source** remonte aux années 1980-1990 avec la volonté de promouvoir la liberté d’utilisation, de modification et de distribution du code source. Ce modèle repose sur une collaboration communautaire ouverte, favorisant l’innovation collective et la transparence. L’Open Source est à la fois un mouvement idéologique et un modèle économique alternatif aux solutions propriétaires traditionnelles.
+
+Face aux défis financiers rencontrés par certains projets purement open source, le modèle **OpenCore** et les **licences duales** ont vu le jour dans les années 2000. Ces modèles hybrides combinent une base open source accessible librement avec des fonctionnalités supplémentaires propriétaires ou des services payants. Ils visent à concilier les avantages de l’Open Source avec un modèle économique plus viable pour les fournisseurs, en garantissant des revenus permettant le développement continu et le support.
+
+### Historique et raison d’être
+
+- **Open Source** :  
+  Né du mouvement du logiciel libre initié par Richard Stallman, l’Open Source s’est formalisé avec la création de l’Open Source Initiative (OSI) en 1998. Il vise à démocratiser l’accès au code source et à promouvoir un écosystème collaboratif, dans lequel les développeurs et utilisateurs peuvent contribuer à l’amélioration continue du logiciel. Le modèle repose sur la force de la communauté pour assurer la qualité, la sécurité, et la pérennité des projets.
+
+- **OpenCore et licences duales** :  
+  Face aux limites économiques de certains projets open source, notamment en termes de financement et de ressources, plusieurs entreprises ont adopté dans les années 2000 le modèle OpenCore. Elles publient un cœur logiciel en open source, tandis que les fonctionnalités avancées ou les services (support, intégration, maintenance) restent sous licence propriétaire ou payante. Ce modèle vise à créer un équilibre entre accessibilité, innovation communautaire et rentabilité commerciale.
+
+### Différences clés
+
+| Critère                  | Open Source pur                        | OpenCore / Licences duales              |
+|--------------------------|--------------------------------------|----------------------------------------|
+| **Accès au code source** | Totalement ouvert et modifiable      | Noyau open source, extensions propriétaires |
+| **Modèle économique**    | Services et support payants           | Fonctionnalités avancées payantes, services |
+| **Flexibilité client**   | Grande liberté d’usage et modification| Accès limité aux fonctionnalités payantes |
+| **Risques**              | Dépendance à la communauté, financement parfois fragile | Verrouillage partiel sur fonctionnalités clés |
+| **Communauté**           | Forte implication communautaire      | Communauté + contrôle commercial plus marqué |
+
+---
+
+Cette comparaison souligne que l’OpenCore et les licences duales constituent une réponse pragmatique aux besoins économiques tout en conservant une certaine ouverture, alors que l’Open Source pur mise avant tout sur la collaboration et la liberté.
+
+
