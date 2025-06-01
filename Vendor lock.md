@@ -171,4 +171,62 @@ Dans ces deux exemples :
 
 La CNCF illustre un modèle **d’innovation collaborative régulée**, où l’ouverture du code est garantie, mais où coexistent différentes stratégies de monétisation. Pour les entreprises utilisatrices, cela représente une opportunité d’adopter des technologies robustes, interopérables et pérennes — tout en nécessitant une **vigilance sur les modèles commerciaux** des éditeurs pour éviter les formes masquées de verrouillage.
 ---
+## Intégration des solutions open source vs OpenCore : retour d’expérience utilisateur
+
+### Résultats d’une étude comparative
+
+Une étude menée par Forrester Consulting pour Instaclustr en 2022, basée sur les réponses de 322 décideurs en développement applicatif, met en lumière les différences perçues et réelles entre les modèles **open source** (FOSS) et **OpenCore** du point de vue des utilisateurs finaux :contentReference[oaicite:4]{index=4}.
+
+#### Avantages perçus du modèle OpenCore
+
+Les répondants utilisant des solutions OpenCore ont identifié les avantages suivants :
+
+- **Réduction des risques** : 41%
+- **Efficacité accrue** : 39%
+- **Facilité de transition vers le cloud** : 33%
+
+Cependant, ces avantages sont également attribués aux solutions open source matures, remettant en question la supériorité perçue du modèle OpenCore.
+
+#### Obstacles à l'adoption de l'open source
+
+Parmi les organisations utilisant des solutions OpenCore, les principaux freins à l'adoption de l'open source sont :
+
+- **Stratégie incohérente entre les départements** : 39%
+- **Manque de support complet** : 31%
+- **Absence de compétences internes en open source** : 29%
+- **Verrouillage des licences existantes** : 29%
+
+Ces obstacles soulignent la nécessité d'un accompagnement spécialisé pour réussir la transition vers des solutions open source.
+
+#### Avantages reconnus des solutions open source
+
+Les organisations ayant adopté des solutions open source mettent en avant :
+
+- **Réduction des coûts** : 45%
+- **Élimination des frais de licence** : 41%
+- **Accès complet au code source** : 40%
+- **Force de la communauté** : 40%
+
+Ces avantages contribuent à une plus grande flexibilité et à une meilleure adaptabilité des solutions open source.
+
+#### Besoin d'accompagnement externe
+
+Malgré les avantages, 84% des organisations utilisant des solutions open source expriment le besoin de recourir à des services managés ou à des consultants pour :
+
+- **Sécurité** : 68%
+- **Scalabilité** : 66%
+- **Assistance à la migration** : 66%
+- **Expertise globale en open source** : 65%
+
+Cela souligne l'importance d'un support externe pour maximiser les bénéfices des solutions open source.
+
+### Implications pour les utilisateurs finaux
+
+Les données indiquent que, bien que les solutions open source offrent des avantages significatifs en termes de coût, de flexibilité et d'innovation, leur adoption réussie dépend fortement de la stratégie organisationnelle, des compétences internes et du support externe disponible. Les solutions OpenCore, bien qu'offrant une certaine commodité, peuvent entraîner des coûts plus élevés et un risque de verrouillage fournisseur.
+
+---
+
+**Références :**
+
+- Forrester Consulting & Instaclustr, *The Advantages of Using Free And Open-Source Software Vs. Open-Core Software*, 2022. :contentReference[oaicite:5]{index=5}
 
