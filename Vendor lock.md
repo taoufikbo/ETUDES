@@ -134,4 +134,41 @@ Face aux défis financiers rencontrés par certains projets purement open source
 
 Cette comparaison souligne que l’OpenCore et les licences duales constituent une réponse pragmatique aux besoins économiques tout en conservant une certaine ouverture, alors que l’Open Source pur mise avant tout sur la collaboration et la liberté.
 
+## L’écosystème CNCF : genèse, objectifs et modèles économiques
+
+### Historique et fondation
+
+La **Cloud Native Computing Foundation (CNCF)** a été créée en 2015 sous l’égide de la **Linux Foundation**, peu après que Google ait publié Kubernetes comme projet open source. Son objectif initial était de fédérer les efforts de standardisation et d’innovation autour des architectures dites *cloud-native*, à savoir des applications conçues pour être **élastiques**, **résilientes**, **scalables** et **exécutées dans des environnements distribués** comme les conteneurs.
+
+[...]
+
+### Positionnement économique : entre ouverture et durabilité
+
+Bien que la CNCF impose que tous les projets soient **open source**, elle ne limite pas les modèles économiques. Ainsi, des entreprises membres peuvent :
+
+- Maintenir une version communautaire (libre) du logiciel,
+- Proposer des **services à valeur ajoutée** (support, intégration, consulting),
+- Développer des **fonctionnalités propriétaires complémentaires** (modèle OpenCore),
+- Offrir des **SaaS commerciaux** bâtis sur ces technologies.
+
+---
+
+### Exemples de projets : open source pur vs OpenCore
+
+| Catégorie          | Projet (modèle open source)      | Projet (modèle OpenCore)                         |
+|--------------------|----------------------------------|--------------------------------------------------|
+| **Orchestration**  | [Kubernetes](https://kubernetes.io/) : projet CNCF open source, gouverné de façon communautaire | **OpenShift** (Red Hat) : basé sur Kubernetes, avec des composants propriétaires (console web, SSO, CI/CD, etc.) |
+| **Base de données**| [Vitess](https://vitess.io/) : base de données cloud-native distribuée pour MySQL, incubée par la CNCF | **MongoDB** : open source à l’origine, aujourd’hui sous licence SSPL avec des versions commerciales comme MongoDB Atlas |
+
+Dans ces deux exemples :
+
+- Kubernetes et Vitess sont **open source purs**, avec une gouvernance communautaire ouverte.
+- OpenShift et MongoDB illustrent une stratégie **OpenCore**, combinant une base ouverte et des extensions payantes ou propriétaires.
+
+---
+
+### Synthèse
+
+La CNCF illustre un modèle **d’innovation collaborative régulée**, où l’ouverture du code est garantie, mais où coexistent différentes stratégies de monétisation. Pour les entreprises utilisatrices, cela représente une opportunité d’adopter des technologies robustes, interopérables et pérennes — tout en nécessitant une **vigilance sur les modèles commerciaux** des éditeurs pour éviter les formes masquées de verrouillage.
+---
 
