@@ -28,12 +28,42 @@ L’article *Vendor Lock-In in Cloud Computing: A Survey* (2015) identifie quatr
 4. **Lock-in des services**  
    L’intégration profonde de services managés (bases de données, messagerie, monitoring, sécurité) spécifiques à un fournisseur cloud crée une forte dépendance, difficile à dissocier lors d’un changement de fournisseur.
 
+
+
 ---
 
 Ces différentes formes de lock-in sont souvent combinées, rendant la sortie d’un fournisseur à la fois coûteuse et complexe. L’article recommande d’adopter des architectures ouvertes et basées sur des standards pour limiter ces dépendances.
 
 > *Source : IEEE Xplore, Vendor Lock-In in Cloud Computing: A Survey (2015)*  
 > [https://ieeexplore.ieee.org/document/7009018](https://ieeexplore.ieee.org/document/7009018)
+
+J'ajouterais un aspect moins intituif : 
+🔒 Le verrouillage par écosystème en open source
+Contrairement à l'idée reçue, l'open source n’élimine pas toujours le vendor lock-in. Trois formes de verrouillage insidieuses peuvent exister :
+
+1. Désengagement d’un acteur clé
+Exemple : Cloud Foundry, affaibli après le retrait de VMware.
+
+Risques : abandon du support, gouvernance affaiblie, coût de migration élevé.
+
+2. Changement de licence restrictif
+Exemple : Terraform (HashiCorp) passé en licence BUSL.
+
+Risques : incertitude légale, création de forks (ex : OpenTofu), fragmentation de l’écosystème.
+
+3. Verrouillage par conflit d’intérêt
+Exemple : ElasticSearch, passé sous SSPL pour contrer AWS.
+
+Risques : perte du statut open source, incompatibilité avec l’écosystème initial.
+
+🎯 Leçon clé
+Un projet open source n’est durable que si :
+
+La communauté est active et distribuée,
+
+La gouvernance est ouverte,
+
+Et il n’existe aucun acteur unique en position de force sur la licence ou la roadmap.
 
 ## Comprendre les modèles de licence avant d'aller plus loin
 
