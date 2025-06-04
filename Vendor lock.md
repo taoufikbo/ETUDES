@@ -37,33 +37,42 @@ Ces différentes formes de lock-in sont souvent combinées, rendant la sortie d�
 > *Source : IEEE Xplore, Vendor Lock-In in Cloud Computing: A Survey (2015)*  
 > [https://ieeexplore.ieee.org/document/7009018](https://ieeexplore.ieee.org/document/7009018)
 
-**J'ajouterais un aspect moins intituif : 🔒 Le verrouillage par écosystème en open source**
+## 🔒 Verrouillage par écosystème en open source : une réalité souvent sous-estimée
 
-Contrairement à l'idée reçue, l'open source n’élimine pas toujours le vendor lock-in. Trois formes de verrouillage  peuvent exister :
+L’open source est souvent perçu comme un rempart contre le vendor lock-in. Pourtant, plusieurs formes de **verrouillage indirect** peuvent exister, notamment liées à la fragilité de l’écosystème ou aux décisions d’acteurs dominants.
 
-1. Désengagement d’un acteur clé
-Exemple : Cloud Foundry, affaibli après le retrait de VMware.
+---
 
-Risques : abandon du support, gouvernance affaiblie, coût de migration élevé.
+### ⚠️ Trois formes de verrouillage possibles
 
-2. Changement de licence restrictif
-Exemple : Terraform (HashiCorp) passé en licence BUSL.
+#### 1. Désengagement d’un acteur clé
+- **Exemple** : *Cloud Foundry* (Pivotal/VMware)
+- **Problème** : Retrait de VMware → affaiblissement de l’écosystème
+- **Conséquences** : perte de support, arrêt des développements, migration coûteuse
 
-Risques : incertitude légale, création de forks (ex : OpenTofu), fragmentation de l’écosystème.
+#### 2. Changement de licence restrictif
+- **Exemple** : *Terraform* (HashiCorp) → passage en BUSL
+- **Problème** : Usage commercial restreint
+- **Conséquences** : Fork communautaire (*OpenTofu*), incertitudes pour les utilisateurs
 
-3. Verrouillage par conflit d’intérêt
-Exemple : ElasticSearch, passé sous SSPL pour contrer AWS.
+#### 3. Verrouillage par conflit d’intérêts
+- **Exemple** : *ElasticSearch* → passage à SSPL
+- **Problème** : Tension avec AWS, modèle fermé
+- **Conséquences** : Perte du statut open source, divergence de l’écosystème (ex. OpenSearch)
 
-Risques : perte du statut open source, incompatibilité avec l’écosystème initial.
+---
 
-🎯 Leçon clé
-Un projet open source n’est durable que si :
+### 📌 Leçon clé
 
-La communauté est active et distribuée,
+Un projet open source n’est pas automatiquement synonyme de pérennité.  
+Pour limiter le risque de verrouillage, il faut s’assurer que :
+- ✅ La communauté est **active et diversifiée**  
+- ✅ La **gouvernance est distribuée**  
+- ✅ Aucun acteur unique ne peut imposer seul des **changements de licence ou de roadmap**
 
-La gouvernance est ouverte,
+---
 
-Et il n’existe aucun acteur unique en position de force sur la licence ou la roadmap.
+> 🧠 **À retenir** : Le verrouillage par défaillance d’écosystème est une forme insidieuse de lock-in, souvent négligée dans les stratégies d’adoption de solutions open source.
 
 ## Comprendre les modèles de licence avant d'aller plus loin
 
