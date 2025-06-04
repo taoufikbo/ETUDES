@@ -37,9 +37,9 @@ Ces différentes formes de lock-in sont souvent combinées, rendant la sortie d�
 > *Source : IEEE Xplore, Vendor Lock-In in Cloud Computing: A Survey (2015)*  
 > [https://ieeexplore.ieee.org/document/7009018](https://ieeexplore.ieee.org/document/7009018)
 
-J'ajouterais un aspect moins intituif : 
-🔒 Le verrouillage par écosystème en open source
-Contrairement à l'idée reçue, l'open source n’élimine pas toujours le vendor lock-in. Trois formes de verrouillage insidieuses peuvent exister :
+**J'ajouterais un aspect moins intituif : 🔒 Le verrouillage par écosystème en open source**
+
+Contrairement à l'idée reçue, l'open source n’élimine pas toujours le vendor lock-in. Trois formes de verrouillage  peuvent exister :
 
 1. Désengagement d’un acteur clé
 Exemple : Cloud Foundry, affaibli après le retrait de VMware.
