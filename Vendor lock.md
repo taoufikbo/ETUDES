@@ -10,11 +10,7 @@ Avec l’essor massif des **clouds publics** et la transformation des **solution
 - **Pertes d’agilité** et **hausse des coûts** pour les applications métier sensibles
 - **Dépendance accrue** via les **PaaS**, qui simplifient le développement mais verrouillent les choix techniques
 
-### 🎯 Objectif de l’étude
-
-Dans cette analyse, nous explorerons :
-- Les **formes de vendor lock-in** (techniques, économiques, organisationnelles)
-
+## Quelques definitions : 
 ## Définition et typologie du Vendor Lock-in
 
 Le vendor lock-in désigne la situation où une entreprise devient dépendante d’un fournisseur technologique, rendant difficile, coûteux ou risqué le changement de prestataire ou de solution.
