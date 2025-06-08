@@ -256,6 +256,16 @@ Malgré les avantages, 84% des organisations utilisant des solutions open source
 
 Cela souligne l'importance d'un support externe pour maximiser les bénéfices des solutions open source.
 
+### Synthése 
+
+| **Thème**                                              | **Détails / Données**                                                                                                                                                                          |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Avantages perçus du modèle OpenCore**                | - Réduction des risques : 41%  <br> - Efficacité accrue : 39%  <br> - Facilité de transition vers le cloud : 33%                                                                               |
+| **Obstacles à l’adoption de l’open source**            | - Stratégie incohérente entre départements : 39%  <br> - Manque de support complet : 31%  <br> - Absence de compétences internes : 29%  <br> - Verrouillage des licences existantes : 29%      |
+| **Avantages reconnus des solutions open source**       | - Réduction des coûts : 45%  <br> - Élimination des frais de licence : 41%  <br> - Accès complet au code source : 40%  <br> - Force de la communauté : 40%                                     |
+| **Besoin d’accompagnement externe pour l’open source** | 84% des organisations déclarent un besoin d’accompagnement pour :  <br> - Sécurité : 68%  <br> - Scalabilité : 66%  <br> - Assistance à la migration : 66%  <br> - Expertise open source : 65% |
+
+
 ### Implications pour les utilisateurs finaux
 
 Les données indiquent que, bien que les solutions open source offrent des avantages significatifs en termes de coût, de flexibilité et d'innovation, leur adoption réussie dépend fortement de la stratégie organisationnelle, des compétences internes et du support externe disponible. Les solutions OpenCore, bien qu'offrant une certaine commodité, peuvent entraîner des coûts plus élevés et un risque de verrouillage fournisseur.
