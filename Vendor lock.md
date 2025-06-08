@@ -29,7 +29,6 @@ L’article *Vendor Lock-In in Cloud Computing: A Survey* (2015) identifie quatr
 
 ---
 
-Ces différentes formes de lock-in sont souvent combinées, rendant la sortie d’un fournisseur à la fois coûteuse et complexe. L’article recommande d’adopter des architectures ouvertes et basées sur des standards pour limiter ces dépendances.
 
 > *Source : IEEE Xplore, Vendor Lock-In in Cloud Computing: A Survey (2015)*  
 > [https://ieeexplore.ieee.org/document/7009018](https://ieeexplore.ieee.org/document/7009018)
