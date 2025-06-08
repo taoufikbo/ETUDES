@@ -18,20 +18,14 @@ Le vendor lock-in désigne la situation où une entreprise devient dépendante d
 ### Typologie du Vendor Lock-in selon l’article IEEE (2015)
 
 L’article *Vendor Lock-In in Cloud Computing: A Survey* (2015) identifie quatre principaux types de verrouillage dans le contexte du cloud computing :
+## Typologie du Vendor Lock-in (IEEE, 2015)
 
-1. **Lock-in des données**  
-   Ce verrouillage se manifeste par la difficulté de migrer ou d’exporter des données stockées dans des formats propriétaires ou verrouillés par le fournisseur, souvent aggravé par des coûts élevés liés à l’extraction (frais de sortie).
-
-2. **Lock-in des applications**  
-   Il s’agit de la dépendance aux APIs, aux langages de programmation et aux outils spécifiques d’un fournisseur, qui compliquent la portabilité et la migration des applications vers une autre plateforme.
-
-3. **Lock-in des infrastructures**  
-   Ce type concerne l’usage de configurations matérielles, de technologies de virtualisation ou de services d’infrastructure propres à un fournisseur, rendant la migration vers une infrastructure alternative complexe.
-
-4. **Lock-in des services**  
-   L’intégration profonde de services managés (bases de données, messagerie, monitoring, sécurité) spécifiques à un fournisseur cloud crée une forte dépendance, difficile à dissocier lors d’un changement de fournisseur.
-
-
+| **Type de Lock-in**          | **Description**                                                                                                                                     |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Lock-in des données**     | Difficulté à migrer ou exporter les données en raison de formats propriétaires ou de frais de sortie élevés.                                        |
+| **Lock-in des applications**| Dépendance aux APIs, langages ou outils spécifiques d’un fournisseur, compliquant la portabilité des applications.                                  |
+| **Lock-in des infrastructures** | Usage de technologies matérielles, de virtualisation ou de configurations propres au fournisseur, rendant complexe le changement d’infrastructure. |
+| **Lock-in des services**    | Forte dépendance aux services managés intégrés (bases de données, monitoring, sécurité), difficilement transposables chez un autre fournisseur.      |
 
 ---
 
@@ -75,8 +69,6 @@ Pour limiter le risque de verrouillage, il faut s’assurer que :
 
 ---
 
-> 🧠 **À retenir** : Le verrouillage par défaillance d’écosystème est une forme insidieuse de lock-in, souvent négligée dans les stratégies d’adoption de solutions open source.
-
 ## Comprendre les modèles de licence avant d'aller plus loin
 
 Avant d’aller plus loin dans l’étude du vendor lock-in, il est important de comprendre les différents **modèles de licence** utilisés par les acteurs IT, qu’ils soient propriétaires, open source ou hybrides. Ces modèles influencent fortement la flexibilité, la pérennité et les risques de dépendance aux fournisseurs.
@@ -110,39 +102,11 @@ Cette analyse souligne l’importance de bien choisir le modèle de licence en f
 
 ## Viabilité économique des différents modèles de licence qui faut prendre en compte pour les plateformes et projets critiques 
 
-COmme dans toutes les strategies de sourcing Il est essentiel **avant de s’engager dans une solution** technologique, de s’assurer de la viabilité du business model du fournisseur selon le modèle de licence proposé. En effet, la pérennité financière du fournisseur impacte directement la continuité des services, la maintenance, la mise à jour des logiciels, et la disponibilité du support. 
+Comme dans toutes les strategies de sourcing Il est essentiel **avant de s’engager dans une solution** technologique, de s’assurer de la viabilité du business model du fournisseur selon le modèle de licence proposé. En effet, la pérennité financière du fournisseur impacte directement la continuité des services, la maintenance, la mise à jour des logiciels, et la disponibilité du support. 
 
 Un fournisseur dont le modèle économique est fragile ou non durable peut entraîner des risques importants : interruption de service, augmentation soudaine des coûts, changement unilatéral des conditions contractuelles, voire abandon du produit. Ainsi, comprendre la robustesse économique derrière le modèle de licence permet de mieux anticiper ces risques et de sécuriser les investissements sur le long terme.
 
-### Analyse des modèles
-
-- **Propriétaire** :  
-  Ce modèle repose sur la vente de licences et souvent sur des contrats de support à coûts élevés. Il garantit des revenus récurrents importants aux fournisseurs, mais impose un fort verrouillage aux clients, limitant leur capacité à changer de fournisseur ou à adapter la solution.  
-
-- **Open Source** :  
-  Basé sur la collaboration communautaire et la diffusion libre du code, ce modèle repose souvent sur des services annexes (support, formation, personnalisation) pour assurer la rentabilité. La viabilité économique dépend largement de la taille et de l’engagement de la communauté ainsi que de la capacité à monétiser les services.  
-
-- **OpenCore et licences duales** :  
-  Ces modèles combinent ouverture et offres commerciales, permettant aux fournisseurs de générer des revenus grâce à des fonctionnalités avancées ou du support premium, tout en attirant une large base d’utilisateurs avec la version open source. Ce modèle équilibre accessibilité et rentabilité.  
-
-- **Freemium et SaaS** :  
-  Le modèle freemium attire un grand nombre d’utilisateurs grâce à une offre gratuite limitée, puis convertit une partie en clients payants. Le SaaS, quant à lui, fonctionne sur des abonnements récurrents, ce qui assure un flux de revenus stable et prévisible. Cependant, ils génèrent une dépendance forte à la plateforme et aux conditions tarifaires du fournisseur.  
-
----
-
-Selon l’étude de Fitzgerald et al. (2014) publiée dans *Research Policy*, les modèles économiques des logiciels open source et hybrides influencent directement la pérennité des projets et la structure du marché IT. L’étude met en lumière que :
-
-- Les fournisseurs open source réussissent en combinant modèles communautaires et offres commerciales ciblées.  
-- Les modèles SaaS favorisent la croissance rapide, mais augmentent le verrouillage économique des clients.  
-- Le modèle propriétaire, bien que traditionnellement rentable, fait face à des défis liés à la pression croissante pour plus d’ouverture et de flexibilité.
-
-> *Source :* Fitzgerald, B., Krishnamurthy, S., & Scarbrough, H. (2014). *Open Source Software and Economic Sustainability: An Empirical Analysis*. Research Policy, 43(4), 605-616.  
-> [https://doi.org/10.1016/j.respol.2013.10.013](https://doi.org/10.1016/j.respol.2013.10.013)
----
-
 ## Focus : Open Source vs OpenCore et licences duales
-
-### Introduction
 
 L’émergence du logiciel **Open Source** remonte aux années 1980-1990 avec la volonté de promouvoir la liberté d’utilisation, de modification et de distribution du code source. Ce modèle repose sur une collaboration communautaire ouverte, favorisant l’innovation collective et la transparence. L’Open Source est à la fois un mouvement idéologique et un modèle économique alternatif aux solutions propriétaires traditionnelles.
 
@@ -288,3 +252,21 @@ Les données indiquent que, bien que les solutions open source offrent des avant
 | **Adoption marché (entreprises & Telco)** | Très forte : telcos (Orange, Vodafone,Nokia ,Mavenir...), industries, secteurs publics. | Universelle : hyperscalers, startups, industries, institutions. | Bonne : adoption dans les entreprises déjà VMware-centric. | Croissante : souveraineté, edge computing, clusters embarqués. | En déclin : utilisé dans certains systèmes legacy ou très spécifiques. |
 | **Pérennité / Roadmap**                | Très forte : soutenu par IBM/Red Hat, feuille de route solide. | Très forte : CNCF, soutenu par tous les hyperscalers. | Moyenne : incertitudes après le rachat par Broadcom. | Bonne : SUSE investit fortement dans Rancher, RKE2, NeuVector. | Faible : projets peu actifs, roadmap floue. |
 | **Participation open source**          | Très élevée : Tekton, Istio, OKD, core K8s contributor. | Forte : projets menés par Google, Red Hat, AWS, etc. | Moyenne : contributions à Velero, Harbor. | Élevée : Rancher Labs, K3s, RKE2, NeuVector. | Faible : héritage fort, mais contributions en baisse. |
+
+Ajout du Radar 
+
+
+### Comparatif des plateformes Cloud (IaaS)
+
+| Critère | KubeVirt (standalone) | OpenShift Virtualization | OpenStack (com.) | OpenStack Red Hat | VMware vSphere | KubeVirt SUSE Harvester | Proxmox VE | CloudStack (Apache) |
+|---------|----------------------|-------------------------|------------------|-------------------|---------------|-------------------------|------------|---------------------|
+| **Modèle de licence** | Open source (Apache) | Commercial via OpenShift | Open source | Commercial RHOSP | Commercial | Open source + support | Open source GPL | Open source (Apache) |
+| **Richesse fonctionnelle** | Moyenne (VMs dans K8s) | Très riche (SDN, CSI, RH integrations) | Riche | Très riche | Très riche | Bonne (Fleet, GUI) | Moyenne | Riche (réseau, stockage) |
+| **Portabilité workloads** | Bonne | Bonne (OVF/virtIO/CDI) | Bonne | Moyenne | Moyenne-faible | Bonne | Moyenne | Bonne |
+| **Vendor lock-in - Portabilité** | Faible | Moyenne (CDI, CRDs RH) | Faible | Moyen | Fort | Faible à modéré | Faible | Faible |
+| **Vendor lock-in - LCM/gestion** | Faible | Fort (via OCP stack) | Faible | Fort (RH tools) | Très fort | Modéré | Faible | Faible à modéré |
+| **Disponibilité compétences** | Moyenne | Moyenne à bonne (RH cert.) | Bonne | Moyenne | Très bonne | En croissance | Bonne | Moyenne |
+| **Adoption marché** | En hausse | Forte chez Telcos | Moyenne | Forte (Telcos) | Très forte | Croissante | Moyenne | Moyenne |
+| **Pérennité / Roadmap** | Forte (CNCF) | Très forte (IBM/Red Hat) | Bonne | Bonne | Incertaine | Bonne | Bonne | Moyenne |
+| **Participation open source** | Élevée (CNCF) | Très forte (KubeVirt, CDI, Tekton…) | Élevée | Très élevée | Moyenne | Bonne (SUSE, CNCF) | Moyenne | Élevée (Apache) |
+
