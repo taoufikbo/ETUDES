@@ -40,7 +40,7 @@ Ces différentes formes de lock-in sont souvent combinées, rendant la sortie d�
 > *Source : IEEE Xplore, Vendor Lock-In in Cloud Computing: A Survey (2015)*  
 > [https://ieeexplore.ieee.org/document/7009018](https://ieeexplore.ieee.org/document/7009018)
 
-## 🔒 Verrouillage par écosystème en open source : une réalité souvent sous-estimée
+## Et l'opensource ? : une forme de lock souvent sous-estimée
 
 L’open source est souvent perçu comme un rempart contre le vendor lock-in. Pourtant, plusieurs formes de **verrouillage indirect** peuvent exister, notamment liées à la fragilité de l’écosystème ou aux décisions d’acteurs dominants.
 
@@ -108,13 +108,9 @@ Cette analyse souligne l’importance de bien choisir le modèle de licence en f
 
 ---
 
-## Viabilité économique des différents modèles de licence
+## Viabilité économique des différents modèles de licence qui faut prendre en compte pour les plateformes et projets critiques 
 
-La viabilité économique des modèles de licence est un facteur clé pour comprendre les dynamiques du marché IT et les risques liés au vendor lock-in. Chaque modèle présente des avantages et des contraintes spécifiques, qui influencent la rentabilité des fournisseurs ainsi que la flexibilité des utilisateurs.
-
-### Importance pour les grands groupes
-
-Pour un grand groupe, il est essentiel **avant de s’engager dans une solution** technologique, de s’assurer de la viabilité du business model du fournisseur selon le modèle de licence proposé. En effet, la pérennité financière du fournisseur impacte directement la continuité des services, la maintenance, la mise à jour des logiciels, et la disponibilité du support. 
+COmme dans toutes les strategies de sourcing Il est essentiel **avant de s’engager dans une solution** technologique, de s’assurer de la viabilité du business model du fournisseur selon le modèle de licence proposé. En effet, la pérennité financière du fournisseur impacte directement la continuité des services, la maintenance, la mise à jour des logiciels, et la disponibilité du support. 
 
 Un fournisseur dont le modèle économique est fragile ou non durable peut entraîner des risques importants : interruption de service, augmentation soudaine des coûts, changement unilatéral des conditions contractuelles, voire abandon du produit. Ainsi, comprendre la robustesse économique derrière le modèle de licence permet de mieux anticiper ces risques et de sécuriser les investissements sur le long terme.
 
@@ -133,8 +129,6 @@ Un fournisseur dont le modèle économique est fragile ou non durable peut entra
   Le modèle freemium attire un grand nombre d’utilisateurs grâce à une offre gratuite limitée, puis convertit une partie en clients payants. Le SaaS, quant à lui, fonctionne sur des abonnements récurrents, ce qui assure un flux de revenus stable et prévisible. Cependant, ils génèrent une dépendance forte à la plateforme et aux conditions tarifaires du fournisseur.  
 
 ---
-
-### Source scientifique
 
 Selon l’étude de Fitzgerald et al. (2014) publiée dans *Research Policy*, les modèles économiques des logiciels open source et hybrides influencent directement la pérennité des projets et la structure du marché IT. L’étude met en lumière que :
 
@@ -272,3 +266,15 @@ Les données indiquent que, bien que les solutions open source offrent des avant
 
 - Forrester Consulting & Instaclustr, *The Advantages of Using Free And Open-Source Software Vs. Open-Core Software*, 2022. :contentReference[oaicite:5]{index=5}
 
+# Comparatif des plateformes Cloud (CaaS/PaaS)
+
+| Critère                                | OpenShift (Red Hat)                          | Kubernetes Vanilla                  | VMware Tanzu / vSphere             | SUSE Rancher / RKE2                       | Cloud Foundry                        |
+|----------------------------------------|----------------------------------------------|-------------------------------------|------------------------------------|-------------------------------------------|--------------------------------------|
+| **Modèle de licence**                  | Commercial (par node)                         | Open source (gratuit)               | Commercial (CPU/vCPU)              | Open source + support                     | Open source + support               |
+| **Richesse fonctionnelle entreprise**  | Très riche (CI/CD, GitOps, ACM, ACS, ODF...) | Basique, à construire               | Riche avec stack VMware (NSX, Harbor) | Complète (GUI, Fleet, CAPI...)            | Riche mais rigide (12-factor apps)  |
+| **Portabilité des workloads**          | Bonne : compatible K8s, mais dépend des CRDs et Operators OpenShift spécifiques. Support d'OpenShift Service Mesh, ODF, etc. Moins portable sur clusters génériques K8s. | Excellente : 100 % natif Kubernetes, sans dépendance à un fournisseur. Compatible multi-cloud et edge. | Moyenne : les Tanzu CRDs, NSX-T et services VMware réduisent la portabilité vers des environnements hors vSphere. | Très bonne : Rancher orchestre des clusters hétérogènes (on-prem, cloud, edge). RKE2 est compatible K8s standard, pas de vendor lock-in fort. | Faible : déploiement lié à la plateforme Cloud Foundry. Stack rigide, difficulté à migrer vers K8s natif sans refactorisation. |
+| **Risque de lock-in (LCM, CI/CD, sécurité)** | Élevé : gestion centralisée via RH Operators, ACM, Pipelines, Console intégrée. | Faible : outils au choix (ArgoCD, Flux, Jenkins...). Aucune dépendance forte. | Élevé : CLI Tanzu, NSX, LCM propriétaire. Difficulté à s’extraire de l’écosystème. | Faible à modéré : Fleet et Rancher GUI facilitent la gestion, mais peuvent devenir centraux dans l’organisation. | Très élevé : BOSH, Diego, UAA sont très spécifiques. Migration complexe. |
+| **Disponibilité des compétences**      | Bonne : écosystème Red Hat mature, certifications bien reconnues. | Très large : forte communauté, documentations, formations en masse. | Moyenne : nécessite des compétences K8s **et** VMware. | Bonne, en croissance : adoption croissante dans les secteurs publics et edge. | Faible : désintérêt croissant, moins de formations disponibles. |
+| **Adoption marché (entreprises & Telco)** | Très forte : telcos (Orange, Vodafone,Nokia ,Mavenir...), industries, secteurs publics. | Universelle : hyperscalers, startups, industries, institutions. | Bonne : adoption dans les entreprises déjà VMware-centric. | Croissante : souveraineté, edge computing, clusters embarqués. | En déclin : utilisé dans certains systèmes legacy ou très spécifiques. |
+| **Pérennité / Roadmap**                | Très forte : soutenu par IBM/Red Hat, feuille de route solide. | Très forte : CNCF, soutenu par tous les hyperscalers. | Moyenne : incertitudes après le rachat par Broadcom. | Bonne : SUSE investit fortement dans Rancher, RKE2, NeuVector. | Faible : projets peu actifs, roadmap floue. |
+| **Participation open source**          | Très élevée : Tekton, Istio, OKD, core K8s contributor. | Forte : projets menés par Google, Red Hat, AWS, etc. | Moyenne : contributions à Velero, Harbor. | Élevée : Rancher Labs, K3s, RKE2, NeuVector. | Faible : héritage fort, mais contributions en baisse. |
