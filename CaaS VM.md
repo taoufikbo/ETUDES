@@ -1,4 +1,3 @@
-Voici la version en Markdown de votre document :
 
 ```markdown
 # Étude sur le déploiement CaaS pour ZOR5G
