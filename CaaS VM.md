@@ -100,4 +100,13 @@ Ils ne peuvent pas être mutualisés entre deux chaînes de soutien ou zones de 
 ---
 
 *Fin de l'étude.*
+
+| Projet                         | Classification | Chaîne de soutien | Zone ZORG | Nombre d'instances             | Bi-site | TOTAL VCPU MASTER | Total VCPU WORKER | Criticité | Détails                     |
+|--------------------------------|------------------|-------------------|------------|-------------------------------|---------|-------------------|-------------------|-----------|------------------------------|
+| SAS (Outils dont Identools)    | MIRE             | S.A.S             | BLEU       | 1 Qualif, 1 Preprod, 2 Prod   | OUI     | 32 vCPU           |                   | Haute     | À étudier                   |
+| Orchestration (GitOps)          | MIRE             | Orchestration     | ROUGE      | 2 Qualif, 6 Preprod, 12 Prod  | OUI     | Min 64, max 124 VCPU |               |           | À étudier                   |
+| CICD                          | MIRE             | ?                 | ?          | 1 Preprod                     | ?       | Min 32, Max 64   |                   |           |                              |
+| Runner                        | ESSVT            | ?                 | ?          | 1 Preprod                     | ?       | Min 60, Max 100 VCPU |               |           | Étude en cours (BM vs VM)   |
+| Outils de test                |                  |                   |            |                               |         |                   |                   |           |                              |
+
 ```
