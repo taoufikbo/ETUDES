@@ -13,9 +13,7 @@ Ces CaaS sont classifiés selon la règle MIRE (cf. Règles de sécurité à app
 Ils ne peuvent pas être mutualisés entre deux chaînes de soutien ou zones de sécurité différentes.
 
 ---
-Voici une proposition de tableau en format Markdown avec une colonne supplémentaire pour la **pertinence** notée en étoiles :
 
-```markdown
 | Produit             | Compatibilité VMware | Coût licence annuel             | Coût d'industrialisation                     | Modèle opérationnel                                              | Pertinence | Commentaires                                                                                     |
 |---------------------|----------------------|---------------------------------|----------------------------------------------|------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------|
 | PRODUIT OTC        | NON                  | 800 €/serveur                   | N/A                                          | Pas de modèle sous VMware                                         | ★☆☆☆☆        | Solution sans compatibilité VMware, coût élevé, pas d'industrialisation prévue               |
