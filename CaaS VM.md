@@ -20,13 +20,6 @@ Ils ne peuvent pas être mutualisés entre deux chaînes de soutien ou zones de 
 | SUSE               | OUI                  | 600 €/serveur                   | 2 ETP pour 6 mois + formation               | À définir                                                        | ★★★☆☆        | Nécessite création d’une filière, capacité à faire, coûts modérés                          |
 | OPENSHIFT          | OUI                  | Slide suivant                   | En cours de construction                     | Solution rapidement déployable via Usine CaaS existante          | ★★★★☆        | Mutualisation MRF, ACM disponible, déploiement rapide, scenario VMware conseillé en horizon 3 ans |
 | Kubevirt sur BM    | NA                   | 5000 €/max 64 cores par node   | Important                                    | À définir                                                        | ★★★☆☆        | Peut s’inscrire dans les chaînes de soutien existantes, scenario à préciser               |
-```
-
-### Notes :
-- La colonne **Pertinence** est notée de 1 à 4 étoiles, selon l'adéquation ou la valeur stratégique perçue.
-- Les commentaires ont été synthétisés pour plus de clarté.
-
-N'hésitez pas à ajuster la notation ou les commentaires selon votre contexte spécifique !
  
 ## Liste des besoins référencés
 
