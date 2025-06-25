@@ -13,7 +13,23 @@ Ces CaaS sont classifiés selon la règle MIRE (cf. Règles de sécurité à app
 Ils ne peuvent pas être mutualisés entre deux chaînes de soutien ou zones de sécurité différentes.
 
 ---
+Voici une proposition de tableau en format Markdown avec une colonne supplémentaire pour la **pertinence** notée en étoiles :
 
+```markdown
+| Produit             | Compatibilité VMware | Coût licence annuel             | Coût d'industrialisation                     | Modèle opérationnel                                              | Pertinence | Commentaires                                                                                     |
+|---------------------|----------------------|---------------------------------|----------------------------------------------|------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------|
+| PRODUIT OTC        | NON                  | 800 €/serveur                   | N/A                                          | Pas de modèle sous VMware                                         | ★☆☆☆☆        | Solution sans compatibilité VMware, coût élevé, pas d'industrialisation prévue               |
+| SUSE               | OUI                  | 600 €/serveur                   | 2 ETP pour 6 mois + formation               | À définir                                                        | ★★★☆☆        | Nécessite création d’une filière, capacité à faire, coûts modérés                          |
+| OPENSHIFT          | OUI                  | Slide suivant                   | En cours de construction                     | Solution rapidement déployable via Usine CaaS existante          | ★★★★☆        | Mutualisation MRF, ACM disponible, déploiement rapide, scenario VMware conseillé en horizon 3 ans |
+| Kubevirt sur BM    | NA                   | 5000 €/max 64 cores par node   | Important                                    | À définir                                                        | ★★★☆☆        | Peut s’inscrire dans les chaînes de soutien existantes, scenario à préciser               |
+```
+
+### Notes :
+- La colonne **Pertinence** est notée de 1 à 4 étoiles, selon l'adéquation ou la valeur stratégique perçue.
+- Les commentaires ont été synthétisés pour plus de clarté.
+
+N'hésitez pas à ajuster la notation ou les commentaires selon votre contexte spécifique !
+ 
 ## Liste des besoins référencés
 
 | Projet                  | Classification | Chaîne de soutien | Zone ZORG | Nombre d'instances | TOTAL VCPU MASTER | Total VCPU WORKER | Criticité | Contrainte Distribution K8S | Détails                                              |
